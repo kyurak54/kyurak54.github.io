@@ -23,11 +23,7 @@
 }
 
 body {
-	background: 
-		radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.4) 0%, transparent 50%),
-		radial-gradient(circle at 80% 20%, rgba(255, 75, 178, 0.3) 0%, transparent 50%),
-		radial-gradient(circle at 40% 40%, rgba(0, 150, 255, 0.3) 0%, transparent 50%),
-		linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+	background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
 	min-height: 100vh;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 	color: var(--text-primary);
@@ -42,17 +38,34 @@ body::before {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: var(--primary-gradient);
-	opacity: 0.6;
+	background: 
+		radial-gradient(ellipse at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 70%),
+		radial-gradient(ellipse at 80% 20%, rgba(255, 75, 178, 0.25) 0%, transparent 70%),
+		radial-gradient(ellipse at 40% 40%, rgba(0, 150, 255, 0.25) 0%, transparent 70%);
+	opacity: 0.8;
 	z-index: -1;
 	animation: gradientShift 20s ease-in-out infinite;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
 }
 
 @keyframes gradientShift {
-	0%, 100% { transform: translateX(0) translateY(0); }
-	25% { transform: translateX(-5%) translateY(-5%); }
-	50% { transform: translateX(5%) translateY(-3%); }
-	75% { transform: translateX(-3%) translateY(5%); }
+	0%, 100% { 
+		transform: translateX(0) translateY(0) translateZ(0); 
+		opacity: 0.8;
+	}
+	25% { 
+		transform: translateX(-3%) translateY(-3%) translateZ(0); 
+		opacity: 0.6;
+	}
+	50% { 
+		transform: translateX(3%) translateY(-2%) translateZ(0); 
+		opacity: 0.9;
+	}
+	75% { 
+		transform: translateX(-2%) translateY(3%) translateZ(0); 
+		opacity: 0.7;
+	}
 }
 
 .floating-elements {
