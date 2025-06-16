@@ -3,135 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>홍길동 | Developer Portfolio</title>
+    <title>홍규락 | Developer Portfolio</title>
     <link rel="stylesheet" href="css/liquid_glass.css">
 </head>
 <body>
-        <div class="scroll-indicator"></div>
-    
-    <div class="floating-elements">
-        <div class="floating-bubble"></div>
-        <div class="floating-bubble"></div>
-        <div class="floating-bubble"></div>
+    <div class="background-elements">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
     </div>
 
     <div class="container">
-        <header>
-            <div class="glass-card dev-section">
-                <h1 class="dev-title">홍규락</h1>
-                <p class="dev-subtitle">Full-Stack Developer & UI/UX Enthusiast</p>
-                <p class="dev-description">
-                    안녕하세요! 저는 사용자 친화적인 인터페이스와 견고한 백엔드를 구축하는 것을 즐기는 개발자입니다. 
-                    새로운 기술을 학습하고 실제 문제 해결에 적용하는 것에 열정을 가지고 있습니다.
-                    <br><br>
-                    이 포트폴리오는 Apple의 '리퀴드 글래스' 디자인 철학을 담아 투명하고 유려한 경험을 제공합니다.
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-content">
+                <div class="logo">홍규락</div>
+                <ul class="nav-links">
+                    <li><a href="#home">홈</a></li>
+                    <li><a href="#about">소개</a></li>
+                    <li><a href="#skills">기술</a></li>
+                    <li><a href="#projects">프로젝트</a></li>
+                    <li><a href="#contact">연락처</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <h1>안녕하세요, 홍규락입니다</h1>
+            <p>사용자 친화적인 인터페이스와 견고한 백엔드를 구축하는 것을 즐기는 개발자입니다. 
+                새로운 기술을 학습하고 실제 문제 해결에 적용하는 것에 열정을 가지고 있습니다. 
+                다양한 프로젝트를 통해 협업 능력을 기르고, 효율적인 코드 작성에 항상 집중합니다.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title">소개</h2>
+            <div class="glass-card">
+                <p style="color: #666; font-size: 1.1rem; line-height: 1.8;">
+                    이 포트폴리오는 Apple의 '리퀴드 글래스' 디자인 철학을 담아 투명하고 유려한 경험을 제공합니다. 
+                    아래에서 저의 프로젝트와 기술 스택을 확인하고, 궁금한 점이 있다면 언제든지 연락 주세요!
                 </p>
             </div>
-        </header>
+        </section>
 
-        <section class="glass-card">
-            <h2 class="section-title">Featured Projects</h2>
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="section-title">기술 스택</h2>
+            <div class="skills-grid">
+                <div class="glass-card skill-category">
+                    <h3>🖥️ 프론트엔드</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Sass</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="glass-card skill-category">
+                    <h3>⚙️ 백엔드</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">REST API</span>
+                        <span class="skill-tag">GraphQL</span>
+                    </div>
+                </div>
+                <div class="glass-card skill-category">
+                    <h3>🗄️ 데이터베이스</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="glass-card skill-category">
+                    <h3>🛠️ 도구 & 기타</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Webpack</span>
+                        <span class="skill-tag">Jest</span>
+                        <span class="skill-tag">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title">프로젝트</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3 class="project-title">🌟 Smart Task Manager</h3>
-                    <p class="project-description">
-                        AI 기반 작업 관리 시스템으로 사용자의 패턴을 학습하여 최적의 작업 순서를 제안합니다. 
-                        React와 Node.js로 구축된 실시간 협업 플랫폼입니다.
-                    </p>
-                    <div class="tech-stack">
+                    <h3>🛒 E-Commerce Platform</h3>
+                    <p>React와 Node.js를 사용한 완전한 전자상거래 플랫폼입니다. 사용자 인증, 상품 관리, 결제 시스템을 포함합니다.</p>
+                    <div class="project-tech">
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">Node.js</span>
                         <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Socket.io</span>
-                        <span class="tech-tag">TensorFlow</span>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <h3 class="project-title">🎨 Design System Library</h3>
-                    <p class="project-description">
-                        재사용 가능한 컴포넌트 라이브러리로 일관된 디자인 시스템을 제공합니다. 
-                        TypeScript로 개발되어 타입 안정성을 보장하며 Storybook으로 문서화되었습니다.
-                    </p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">Styled Components</span>
-                        <span class="tech-tag">Storybook</span>
-                        <span class="tech-tag">Jest</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3 class="project-title">📱 Mobile Commerce App</h3>
-                    <p class="project-description">
-                        크로스 플랫폼 모바일 커머스 앱으로 직관적인 UX와 안전한 결제 시스템을 구현했습니다. 
-                        오프라인 모드와 푸시 알림 기능을 지원합니다.
-                    </p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">React Native</span>
-                        <span class="tech-tag">GraphQL</span>
                         <span class="tech-tag">Stripe</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>📱 Task Management App</h3>
+                    <p>Vue.js로 구축된 반응형 작업 관리 애플리케이션입니다. 드래그 앤 드롭 기능과 실시간 협업을 지원합니다.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Vuex</span>
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>🌐 Social Media Dashboard</h3>
+                    <p>다양한 소셜 미디어 플랫폼의 데이터를 통합하여 보여주는 분석 대시보드입니다.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>🎵 Music Streaming App</h3>
+                    <p>Spotify API를 활용한 음악 스트리밍 애플리케이션입니다. 플레이리스트 관리와 음악 추천 기능을 제공합니다.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Spotify API</span>
+                        <span class="tech-tag">Redux</span>
                         <span class="tech-tag">Firebase</span>
                     </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="glass-card">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <span class="skill-icon">⚛️</span>
-                    <div class="skill-name">Frontend Development</div>
-                    <div class="skill-level">React, Vue.js, TypeScript</div>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">연락처</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <a href="mailto:ghdrbfkr54@gmail.com">📧 ghdrbfkr54@gmail.com</a>
                 </div>
-                <div class="skill-item">
-                    <span class="skill-icon">🚀</span>
-                    <div class="skill-name">Backend Development</div>
-                    <div class="skill-level">Node.js, Python, Express</div>
+                <div class="contact-item">
+                    <a href="https://github.com/kyurak54" target="_blank">💻 GitHub</a>
                 </div>
-                <div class="skill-item">
-                    <span class="skill-icon">💾</span>
-                    <div class="skill-name">Database</div>
-                    <div class="skill-level">MongoDB, PostgreSQL, Redis</div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-icon">☁️</span>
-                    <div class="skill-name">Cloud & DevOps</div>
-                    <div class="skill-level">AWS, Docker, CI/CD</div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-icon">🎨</span>
-                    <div class="skill-name">UI/UX Design</div>
-                    <div class="skill-level">Figma, Adobe XD, Framer</div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-icon">📱</span>
-                    <div class="skill-name">Mobile Development</div>
-                    <div class="skill-level">React Native, Flutter</div>
+                <div class="contact-item">
+                    <a href="tel:+82-10-9360-6837">📞 010-9360-6837</a>
                 </div>
             </div>
         </section>
 
-        <section class="glass-card contact-section">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="dev-description">새로운 기회나 협업에 관심이 있으시다면 언제든지 연락 주세요!</p>
-            <div class="contact-links">
-                <a href="mailto:contact@example.com" class="contact-btn">
-                    📧 Email
-                </a>
-                <a href="https://github.com" class="contact-btn">
-                    💻 GitHub
-                </a>
-                <a href="https://linkedin.com" class="contact-btn">
-                    💼 LinkedIn
-                </a>
-                <a href="https://twitter.com" class="contact-btn">
-                    🐦 Twitter
-                </a>
-            </div>
-        </section>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 홍규락. All rights reserved.</p>
+        </footer>
     </div>
+
 	<script src="js/liquid_glass.js"></script>
 </body>
 </html>
