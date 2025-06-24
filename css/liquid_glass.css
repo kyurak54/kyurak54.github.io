@@ -165,14 +165,14 @@ nav {
 	width: 100%;
 }
 
-/* Hero Section */
-.hero {
+/* user Section */
+.user {
 	text-align: center;
-	padding: 80px 0;
+	padding: 60px 0;
 	margin-bottom: 80px;
 }
 
-.hero h1 {
+.user h1 {
 	font-size: clamp(3rem, 4vw, 6rem);
 	font-weight: 800;
 	color: #4a4a4a;
@@ -181,7 +181,7 @@ nav {
 	animation: slideInFromTop 1s ease-out;
 }
 
-.hero p {
+.user p {
 	font-size: clamp(1.2rem, 3vw, 1.5rem);
 	color: #666;
 	max-width: 1000px;
@@ -483,7 +483,7 @@ footer p {
 		justify-content: center;
 	}
 
-	.hero {
+	.user {
 		padding: 60px 0;
 	}
 
